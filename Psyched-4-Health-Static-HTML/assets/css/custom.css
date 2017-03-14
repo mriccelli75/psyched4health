@@ -28,6 +28,7 @@ h1,h2,h3,h4,h5,h6 {
 	text-rendering: optimizelegibility;
 	font-family: 'Roboto Slab', serif;
 	/*font-weight: bold;*/
+	color: #c227b9;
 }
 
 h1 {
@@ -459,9 +460,10 @@ footer {
 	color: white;
 	padding: 20px 0 10px;
 	font-size: 16px;
+
 }
 footer img {
-    width: 150px;
+  width: 150px;
 }
 
 footer nav {
@@ -580,7 +582,9 @@ footer p {
 .post-comments-badge:hover {
 	background-color: #ff5f00;
 }
-
+body.single .post-comments-badge {
+	display: none;
+}
 #comments h3 {
 	text-align: center;
 }
@@ -715,42 +719,50 @@ img.pull-right.img-circle.author {
 }
 
 @media screen and (max-width : 767px) {
-	.navbar-toggle {
-		border-radius: 0px;
-		margin-top: 28px;
-	}
+			.navbar-toggle {
+				border-radius: 0px;
+				margin-top: 28px;
+			}
 
-	.navbar-collapse {
-    margin-top: 30px;
-    padding-top: 0;
-        -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.2), 0 -1px 0px rgba(0,0,0,0.02);
-    -moz-box-shadow: 0 2px 4px rgba(0,0,0,0.2), 0 -1px 0px rgba(0,0,0,0.02);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2), 0 -1px 0px rgba(0,0,0,0.02);
-	}
+			.navbar-collapse {
+		    margin-top: 30px;
+		    padding-top: 0;
+		        -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.2), 0 -1px 0px rgba(0,0,0,0.02);
+		    -moz-box-shadow: 0 2px 4px rgba(0,0,0,0.2), 0 -1px 0px rgba(0,0,0,0.02);
+		    box-shadow: 0 2px 4px rgba(0,0,0,0.2), 0 -1px 0px rgba(0,0,0,0.02);
+			}
 
-	.nav>li {
-   
-    border-bottom: 1px solid #f2f2f2;
-	}
-	.nav>li:last-child {
-   
-    border-bottom: 0px solid #f2f2f2;
-	}
+			.nav>li {
+		    border-bottom: 1px solid #f2f2f2;
+			}
+			.nav>li:last-child {
+		   
+		    border-bottom: 0px solid #f2f2f2;
+			}
+		
+			.btn-success {
+				font-size: 1em;
+				}
+			.navbar-collapse > ul > li a > img {
+				width: 40px;
+		    line-height: 1;
+		    display: inline-block;
+		    padding-right: 5px;
+			}
 
-	.btn-success {
-		font-size: 1em;
-		}
-	.navbar-collapse > ul > li a > img {
-		width: 40px;
-    line-height: 1;
-    display: inline-block;
-    padding-right: 5px;
+			img.pull-right.img-circle.author {
+		    width: 15%;
+			}
+		
 }
-		}
+
+@media screen and (max-width : 525px) {
+			.post-image {
+			   height: 260px;
+			   overflow: hidden;
+			}
 	
-
 }
-
 @media screen and (max-width : 568px) {
 	
 }
